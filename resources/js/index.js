@@ -29,5 +29,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const index = new Vue({
-    el: '#app'
+    el: '#index'
 });

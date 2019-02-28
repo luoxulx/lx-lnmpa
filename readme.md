@@ -1,3 +1,29 @@
+##### test
+<p>php composer.phar install -vvv</p>
+<p>php artisan storage:link</p>
+<p>cp .env.example .env</p>
+<p>add DB info into .env</p>
+<p>php artisan key:generate</p>
+<p>迁移：php artisan migrate</p>
+<p>填充数据: php artisan db:seed</p>
+<p>回滚：php artisan migrate:rollback   状态：（status）</p>
+
+<p>Docker:docker-compose start/stop</p>
+
+##### 记录:
+<p>创建 Markdown 模板,执行此命令之后，会在 app/mail 目录下面生成文件 Activate.php：
+php artisan make:mail Activate --markdown=emails.activate</p>
+
+##### ide_helper
+Note: `bootstrap/compiled.php` has to be cleared first, so run `php artisan clear-compiled` before generating.
+
+<p>生成文件：php artisan ide-helper:generate</p>
+<p>Eloqent 模型类中添加注释：php artisan ide-helper:model -WR   （需要doctrine/dbal包）</p>
+
+---
+***
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">

@@ -49120,7 +49120,7 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
  */
 
 var index = new Vue({
-  el: '#app'
+  el: '#index'
 });
 
 /***/ }),
