@@ -1796,8 +1796,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Feedback",
+  data: function data() {
+    return {
+      xxx: 'xxx'
+    };
+  },
   mounted: function mounted() {
-    console.log(11);
+    window.axios.put('/test').then(function (response) {
+      console.log(response);
+    });
   }
 });
 
@@ -49074,6 +49081,7 @@ try {
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.baseURL = '/api';
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
  * all outgoing HTTP requests automatically have it attached. This is just
@@ -49086,7 +49094,24 @@ if (token) {
   window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
   console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
-}
+} // 请求拦截器
+
+
+window.axios.interceptors.request.use(function (config) {
+  // 在发送请求之前做些什么
+  return config;
+}, function (error) {
+  // 对请求错误做些什么
+  return Promise.reject(error);
+}); // 响应拦截器
+
+window.axios.interceptors.response.use(function (response) {
+  // 对响应数据做点什么
+  return response.data;
+}, function (error) {
+  // 对响应错误做点什么
+  return Promise.reject(error);
+});
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting

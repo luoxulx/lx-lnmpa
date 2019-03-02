@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::put('test_api', function (){
+    return ['a'=>'aaa','a2'=>22,'a3'=>true,'a4'=>null, 'status'=>false];
+});

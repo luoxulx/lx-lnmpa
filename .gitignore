@@ -4,6 +4,7 @@
 /public/fontawesome
 /storage/*.key
 /vendor
+/.idea
 .env
 .phpunit.result.cache
 Homestead.json

@@ -23,6 +23,7 @@ try {
 window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.baseURL = '/api';
 
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
@@ -37,6 +38,24 @@ if (token) {
 } else {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
+
+// 请求拦截器
+window.axios.interceptors.request.use(function (config) {
+  // 在发送请求之前做些什么
+  return config
+}, function (error) {
+  // 对请求错误做些什么
+  return Promise.reject(error)
+})
+// 响应拦截器
+window.axios.interceptors.response.use(function (response) {
+  // 对响应数据做点什么
+  return response.data
+}, function (error) {
+  // 对响应错误做点什么
+  return Promise.reject(error)
+})
+
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

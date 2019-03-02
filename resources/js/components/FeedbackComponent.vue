@@ -4,13 +4,13 @@
       <div class="col-md-6 col-sm-6">
         <div class="form-group">
           <label for="form-contact-name">Name *</label>
-          <input type="text" class="form-control" id="form-contact-name" name="guest_name" placeholder="Name" required>
+          <input type="text" class="form-control" id="form-contact-name" v-model="form.nickname" placeholder="Name" required>
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
         <div class="form-group">
           <label for="form-contact-email">Email *</label>
-          <input type="email" class="form-control" id="form-contact-email" name="guest_email" placeholder="Email" required>
+          <input type="email" class="form-control" id="form-contact-email" v-model="form.email" placeholder="Email" required>
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
       <div class="col-md-12">
         <div class="form-group">
           <label for="form-contact-message">Message *</label>
-          <textarea class="form-control" id="form-contact-message" rows="5" name="guest_content" placeholder="Message" required></textarea>
+          <textarea class="form-control" id="form-contact-message" rows="5" v-model="form.content" placeholder="Message" required></textarea>
         </div>
       </div>
     </div>
@@ -32,8 +32,20 @@
 <script>
   export default {
     name: "Feedback",
+    components: {},
+    data () {
+      return {
+        form: {
+          nickname: '',
+          email: '',
+          content: '',
+        }
+      }
+    },
     mounted() {
-
+      window.axios.put('/test_api').then((response)=>{
+        console.log(response)
+      })
     }
   }
 </script>
