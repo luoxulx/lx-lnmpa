@@ -33,7 +33,7 @@
   export default {
     name: "Feedback",
     mounted() {
-      console.log(11)
+
     }
   }
 </script>

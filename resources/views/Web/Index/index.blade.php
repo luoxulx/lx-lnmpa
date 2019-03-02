@@ -11,11 +11,11 @@
 <body data-spy="scroll" data-target=".navbar" class="has-loading-screen">
 <div id="index">
     <div class="ts-page-wrapper" id="page-top">
-    <!--NAVIGATION ******************************************************************************************-->
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
         <div class="container">
-            <a class="navbar-brand ts-push-down__50 position-absolute ts-bottom__0 bg-white pb-0 ts-z-index__1 ts-scroll" href="#page-top"><img src="/my/logo.png" alt="logo.png"></a><!--end navbar-brand-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><!--end navbar-toggler-->
+            <a class="navbar-brand ts-push-down__50 position-absolute ts-bottom__0 bg-white pb-0 ts-z-index__1 ts-scroll" href="#page-top"><img src="/my/logo.png" alt="logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-block d-lg-flex ml-auto text-right">
                     <a class="nav-item nav-link active ts-scroll" href="#page-top">Home <span class="sr-only">(current)</span></a>
@@ -25,111 +25,102 @@
                     <a class="nav-item nav-link ts-scroll" href="#portfolio">Portfolio</a>
                     <a class="nav-item nav-link ts-scroll" href="#testimonials">Clients</a>
                     <a class="nav-item nav-link ts-scroll mr-2" href="#form-contact">Contact</a>
-                </div><!--end navbar-nav-->
-            </div><!--end collapse-->
-        </div><!--end container-->
-    </nav><!--end navbar-->
-    <!--*********************************************************************************************************-->
-    <!--************ HERO ***************************************************************************************-->
-    <!--*********************************************************************************************************-->
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div id="ts-hero" class="ts-animate-hero-items">
-        <!--HERO CONTENT ****************************************************************************************-->
         <div class="container position-relative h-100 ts-align__vertical">
             <div class="row w-100">
-                <div class="col-md-8"><!--SOCIAL ICONS-->
+                <div class="col-md-8">
                     <figure class="ts-social-icons mb-4">
                         <a href="#" class="mr-3"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="mr-3"><i class="fab fa-pinterest"></i></a>
                         <a href="#" class="mr-3"><i class="fab fa-slack"></i></a>
                         <a href="#" class="mr-3"><i class="fab fa-instagram"></i></a>
-                    </figure><!--TITLE -->
-                    <h1>I am Jonathan Doe</h1>
+                    </figure>
+                    <h1>I'm Frankenstein&14k</h1>
                     <h1 class="ts-bubble-border">
                         <span class="ts-title-rotate">
-                            <span class="active">Designer</span>
-                            <span>Photographer</span>
-                            <span>Creative Person</span>
+                            <span class="active">Hacker of white hat</span>
+                            <span>C++&Python Developer</span>
+                            <span>Web Designer</span>
                         </span>
                     </h1>
-                </div><!--end col-md-8-->
-            </div><!--end row-->
+                </div>
+            </div>
             <a href="#my-services" class="ts-btn-effect position-absolute ts-bottom__0 ts-left__0 ts-scroll ml-3 mb-3"><span class="ts-visible ts-circle__sm rounded-0 ts-bg-primary"><i class="fa fa-arrow-down text-white"></i></span><span class="ts-hidden ts-circle__sm rounded-0"><i class="fa fa-arrow-down text-white"></i></span></a>
-        </div><!--end container-->
-        <!--END HERO CONTENT ************************************************************************************-->
-        <!--HERO BACKGROUND *************************************************************************************-->
+        </div>
         <div class="ts-background">
             <div class="ts-background-image" data-bg-image="/my/bg-hero.jpg"></div>
         </div>
-        <!--END HERO BACKGROUND *********************************************************************************-->
-    </div><!--end #hero-->
-    <!--*********************************************************************************************************-->
-    <!--************ CONTENT ************************************************************************************-->
-    <!--*********************************************************************************************************-->
+    </div>
+
     <main id="ts-content">
-        <!--MY SERVICES ***********************************************************************************-->
         <section id="my-services" class="ts-block ts-xs-text-center pb-0">
             <div class="container">
-                <div class="ts-title text-center"><h2>My Services</h2></div><!--end ts-title-->
+                <div class="ts-title text-center"><h2>My Services</h2></div>
                 <div class="row">
 
                     <div class="col-sm-6 col-md-4 col-xl-4">
                         <div class="ts-item" data-animate="ts-fadeInUp">
                             <div class="ts-item-content">
                                 <div class="ts-item-header">
-                                    <figure class="icon"><img src="/my/icon-brushes.png" alt=""></figure><!--end icon-->
-                                </div><!--end ts-item-header-->
-                                <div class="ts-item-body"><h4>Web Design</h4>
-                                    <p class="mb-0">Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
-                                </div><!--end ts-item-body-->
+                                    <figure class="icon"><img src="/my/icon-brushes.png" alt=""></figure>
+                                </div>
+                                <div class="ts-item-body"><h4>White Hat Hacker</h4>
+                                    <p class="mb-0">Hacker Arsenal What is done is not malicious destruction, they are a group of technical personnel across the network, keen on scientific and technological exploration, Computer science research.</p>
+                                </div>
                                 <div class="ts-item-footer">
-                                    <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect"><span>Read More</span></a>
-                                </div><!--end ts-item-footer-->
-                            </div><!--end ts-item-content-->
-                        </div><!--end ts-item-->
-                    </div><!--end col-xl-4-->
+                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect" target="_blank"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-sm-6 col-md-4 col-xl-4">
                         <div class="ts-item" data-animate="ts-fadeInUp" data-delay=".1s">
                             <div class="ts-item-content">
                                 <div class="ts-item-header">
-                                    <figure class="icon"><img src="/my/icon-camera.png" alt=""></figure><!--end icon-->
-                                </div><!--end ts-item-header-->
-                                <div class="ts-item-body"><h4>Photography</h4>
-                                    <p class="mb-0">Fusce lorem ex, fringilla eget consequat ut, molestie sit amet nibh. Nullam vitae tincidunt</p>
-                                </div><!--end ts-item-body-->
+                                    <figure class="icon"><img src="/my/icon-camera.png" alt=""></figure>
+                                </div>
+                                <div class="ts-item-body"><h4>C++</h4>
+                                    <p class="mb-0">https://cn.bing.com/https://cn.bing.com/https://cn.bing.com/https://cn.bing.com/</p>
+                                </div>
                                 <div class="ts-item-footer">
-                                    <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect"><span>Read More</span></a>
-                                </div><!--end ts-item-footer-->
-                            </div><!--end ts-item-content-->
-                        </div><!--end ts-item-->
-                    </div><!--end col-xl-4-->
+                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect" target="_blank"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-sm-6 col-md-4 col-xl-4">
                         <div class="ts-item" data-animate="ts-fadeInUp" data-delay=".2s">
                             <div class="ts-item-content">
                                 <div class="ts-item-header">
-                                    <figure class="icon"><img src="/my/icon-video.png" alt=""></figure><!--end icon-->
-                                </div><!--end ts-item-header-->
+                                    <figure class="icon"><img src="/my/icon-video.png" alt=""></figure>
+                                </div>
                                 <div class="ts-item-body"><h4>Video Editing</h4>
                                     <p class="mb-0">Aenean pretium nulla libero, vitae iaculis libero efficitur a. Fusce ut augue finibus quam</p></div><!--end ts-item-body-->
                                 <div class="ts-item-footer">
-                                    <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect"><span>Read More</span></a>
-                                </div><!--end ts-item-footer-->
-                            </div><!--end ts-item-content-->
-                        </div><!--end ts-item-->
-                    </div><!--end col-xl-4-->
+                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect" target="_blank"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-sm-6 col-md-4 col-xl-4">
                         <div class="ts-item" data-animate="ts-fadeInUp" data-delay=".3s">
                             <div class="ts-item-content">
                                 <div class="ts-item-header">
-                                    <figure class="icon"><img src="/my/icon-pencil.png" alt=""></figure><!--end icon-->
-                                </div><!--end ts-item-header-->
+                                    <figure class="icon"><img src="/my/icon-pencil.png" alt=""></figure>
+                                </div>
                                 <div class="ts-item-body"><h4>Copy Writing</h4>
                                     <p class="mb-0">Fusce lorem ex, fringilla eget consequat ut, molestie sit amet nibh. Nullam vitae tincidunt</p></div><!--end ts-item-body-->
                                 <div class="ts-item-footer">
-                                    <a href="#" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect"><span>Read More</span></a>
+                                    <a href="javascript:void(0);" data-toggle="modal" data-target="#modal" class="ts-link-arrow-effect"><span>Read More</span></a>
                                 </div><!--end ts-item-footer-->
                             </div><!--end ts-item-content-->
                         </div><!--end ts-item-->
