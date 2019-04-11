@@ -43,7 +43,7 @@
       }
     },
     mounted() {
-      window.axios.put('/test_api').then((response)=>{
+      window.axios.get('/test').then((response)=>{
         console.log(response)
       })
     }

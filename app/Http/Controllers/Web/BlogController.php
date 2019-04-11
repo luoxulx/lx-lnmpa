@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: luoxulx
- * Date: 2019/2/26
- * Time: 下午7:40
+ * Date: 2019/4/11
+ * Time: 下午4:26
  */
 
 namespace App\Http\Controllers\Web;
@@ -11,11 +11,11 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 
-class IndexController extends Controller
+class BlogController extends Controller
 {
 
     public function index()
     {
-        return view('web.index.index');
+        return view('web.blog.index');
     }
 }

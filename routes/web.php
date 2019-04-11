@@ -25,4 +25,9 @@ Route::group(['namespace'=>'Auth'], function (){
 Route::group(['namespace'=>'Web'], function (){
 
     Route::get('/', 'IndexController@index');
+
+    Route::resource('blog', 'BlogController', [
+        'names' => ['index' => 'blog.index', 'show' => 'blog.show',],
+        'except' => ['create', 'edit', 'store', 'update', 'destroy']
+    ]);
 });
